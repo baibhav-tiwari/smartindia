@@ -1,40 +1,34 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LOGIN</title>
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>LOGIN</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header>Login Form</header>
-    <form action="#">
-      <div class="field email">
-        <div class="input-area">
-          <input type="text" placeholder="Email Address" id="email">
-          <i class="icon fas fa-envelope"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
-        </div>
-        <div class="error error-txt">Email can't be blank</div>
-      </div>
-      <div class="field password">
-        <div class="input-area">
-          <input type="password" placeholder="Password" id="password">
-          <i class="icon fas fa-lock"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
-        </div>
-        <div class="error error-txt">Password can't be blank</div>
-      </div>
-      <div class="pass-txt"><a href="#">Forgot password?</a></div>
-      <input type="submit" value="Login">
-    </form>
-    <div class="sign-txt">New Here? <a href="signup.html">Signup now</a></div>
-  </div>
-
-  <script src="login.js"></script>
-
+    
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="" id="username">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="" id="password">
+            <label>Password</label>
+          </div>
+          <a href="#" onclick="validate()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div> 
 </body>
 </html>

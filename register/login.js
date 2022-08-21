@@ -1,11 +1,11 @@
 function validate() {
-    var email = document.getElementById("email").value;
+    var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    if (email == "admin_org" && password == "user") {
+    if (username == "admin@org" && password == "@org") {
         alert(window.open("organisation.html"));
         return false;
     }
-    else if (email == "admin_hei" && password == "user") {
+    else if (username == "admin@hei" && password == "@hei") {
         alert(window.open("hei.html"));
         return false;
 
