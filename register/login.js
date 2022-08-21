@@ -1,17 +1,18 @@
-
-function validate(data) {
+function validate() {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-
-    if (email == "hei@gmail.com" && password == "hei@admin") {
-        alert("Welcome Back HEI's");
+    if (email == "admin_org" && password == "user") {
+        alert(window.open("organisation.html"));
         return false;
     }
-    else if (email == "org@gmail.com" && password == "org@admin") {
-        alert("Welcome Back ORG");
+    else if (email == "admin_hei" && password == "user") {
+        alert(window.open("hei.html"));
         return false;
+
     }
     else {
-        LOGIN_FAILED;
+        alert("Account Not Found");
     }
+
+
 }
