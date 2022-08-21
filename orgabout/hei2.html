@@ -44,6 +44,31 @@
 			</form>
 		</div>
 	</div>
+	<script>
+    var stripe= Stripe(
+      "pk_test_51LYwjfSIebMt9Nru8z7AtjnYS9lCb4KqCL6vbLCNkJvYiCQZU8f9XZBUpP0gixPTMB7AyxckgwswepBQ7yY2juF000SkUUIOWf"
+
+    )
+    document.getElementById("checkout").addEventListener("click", function(){
+      stripe.redirectToCheckout({
+        lineItems: [
+          {
+          
+            price: "price_1LZLmHSIebMt9NruAKbJAmws",
+            quantity: 1,
+          },
+        ],
+        mode: "payment",
+        successUrl: "https://www.google.com/",
+        cancelUrl: "https://wwww.twitter.com/",
+
+        
+      })
+      .then(function(result){
+        alert
+      });
+    })
+  </script>
 	
 </body>
 </html>
