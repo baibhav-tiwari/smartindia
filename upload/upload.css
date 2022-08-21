@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #6990F2;
+    background: #00308F;
 }
 
 ::selection {
@@ -73,7 +73,7 @@ section .row {
 }
 
 section .row i {
-    color: #6990F2;
+    color: #00308F;
     font-size: 30px;
 }
 
@@ -104,7 +104,7 @@ section .details span {
 .content .progress-bar .progress {
     height: 100%;
     width: 0%;
-    background: #6990F2;
+    background: #00308F;
     border-radius: inherit;
 }
 
