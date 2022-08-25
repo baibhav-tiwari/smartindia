@@ -11,7 +11,7 @@ function validate() {
 
     }
     else {
-        alert("Account Not Found");
+        alert("Account not found !!");
     }
 
 
