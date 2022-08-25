@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -12,130 +12,57 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #00308F;
+    background: #0fb8ac;
 }
 
-::selection {
-    color: #fff;
-    background: #6990F2;
-}
-
-.wrapper {
-    width: 430px;
-    background: #fff;
+.drag-area {
+    border: 2px dashed #fff;
+    height: 500px;
+    width: 700px;
     border-radius: 5px;
-    padding: 30px;
-    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
-}
-
-.wrapper header {
-    color: #6990F2;
-    font-size: 27px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.wrapper form {
-    height: 167px;
     display: flex;
-    cursor: pointer;
-    margin: 30px 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 5px;
-    border: 2px dashed #6990F2;
 }
 
-form :where(i, p) {
-    color: #6990F2;
+.drag-area.active {
+    border: 2px solid #fff;
 }
 
-form i {
-    font-size: 50px;
+.drag-area .icon {
+    font-size: 100px;
+    color: #fff;
 }
 
-form p {
-    margin-top: 15px;
-    font-size: 16px;
-}
-
-section .row {
-    margin-bottom: 10px;
-    background: #E9F0FF;
-    list-style: none;
-    padding: 15px 20px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-section .row i {
-    color: #00308F;
+.drag-area header {
     font-size: 30px;
+    font-weight: 500;
+    color: #fff;
 }
 
-section .details span {
-    font-size: 14px;
+.drag-area span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
 }
 
-.progress-area .row .content {
-    width: 100%;
-    margin-left: 15px;
-}
-
-.progress-area .details {
-    display: flex;
-    align-items: center;
-    margin-bottom: 7px;
-    justify-content: space-between;
-}
-
-.progress-area .content .progress-bar {
-    height: 6px;
-    width: 100%;
-    margin-bottom: 4px;
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
     background: #fff;
-    border-radius: 30px;
+    color: #0fb8ac;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.content .progress-bar .progress {
+.drag-area img {
     height: 100%;
-    width: 0%;
-    background: #00308F;
-    border-radius: inherit;
-}
-
-.uploaded-area {
-    max-height: 232px;
-    overflow-y: scroll;
-}
-
-.uploaded-area.onprogress {
-    max-height: 150px;
-}
-
-.uploaded-area::-webkit-scrollbar {
-    width: 0px;
-}
-
-.uploaded-area .row .content {
-    display: flex;
-    align-items: center;
-}
-
-.uploaded-area .row .details {
-    display: flex;
-    margin-left: 15px;
-    flex-direction: column;
-}
-
-.uploaded-area .row .details .size {
-    color: #404040;
-    font-size: 11px;
-}
-
-.uploaded-area i.fa-check {
-    font-size: 16px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
